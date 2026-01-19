@@ -1,0 +1,21 @@
+﻿msg_id,app_protocol,src_app,dst_app,message,timestamp
+1,HTTP,client_chrome_pc1,google_web_server,GET /search?q=news HTTP/1.1,0.1
+2,HTTP,google_web_server,client_chrome_pc1,HTTP/1.1 200 OK (text/html),0.12
+3,HTTP,client_firefox_laptop,facebook_server,POST /api/login HTTP/1.1,0.13
+4,HTTP,facebook_server,client_firefox_laptop,HTTP/1.1 200 OK (Auth Token),0.15
+5,HTTP,client_safari_iphone,instagram_cdn,GET /img/profile_pic.jpg HTTP/1.1,0.16
+6,HTTP,instagram_cdn,client_safari_iphone,HTTP/1.1 200 OK (image/jpeg),0.18
+7,HTTP,client_chrome_pc1,google_web_server,GET /images/logo_doodle.png HTTP/1.1,0.2
+8,HTTP,google_web_server,client_chrome_pc1,HTTP/1.1 200 OK (image/png),0.22
+9,HTTP,iot_smart_fridge,samsung_update_server,GET /firmware/check HTTP/1.1,0.25
+10,HTTP,samsung_update_server,iot_smart_fridge,HTTP/1.1 304 Not Modified,0.27
+11,HTTP,client_edge_desktop,microsoft_login,POST /auth/oauth2 HTTP/1.1,0.3
+12,HTTP,microsoft_login,client_edge_desktop,HTTP/1.1 401 Unauthorized,0.32
+13,HTTP,client_edge_desktop,microsoft_login,POST /auth/oauth2 (Retry) HTTP/1.1,0.35
+14,HTTP,microsoft_login,client_edge_desktop,HTTP/1.1 200 OK (Success),0.38
+15,HTTP,client_firefox_laptop,facebook_server,GET /feed/updates HTTP/1.1,0.4
+16,HTTP,facebook_server,client_firefox_laptop,HTTP/1.1 200 OK (application/json),0.42
+17,HTTP,client_chrome_pc1,google_ads_server,GET /api/ad_tracking HTTP/1.1,0.45
+18,HTTP,google_ads_server,client_chrome_pc1,HTTP/1.1 204 No Content,0.47
+19,HTTP,client_safari_iphone,instagram_api,POST /post/like HTTP/1.1,0.5
+20,HTTP,instagram_api,client_safari_iphone,HTTP/1.1 200 OK,0.52
